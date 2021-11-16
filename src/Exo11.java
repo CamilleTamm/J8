@@ -27,8 +27,5 @@ public class Exo11 {
         liste.add(7);
 
         System.out.println(sommeNegatifs(liste));
-
-
-
     }
 }

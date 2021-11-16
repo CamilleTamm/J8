@@ -6,12 +6,16 @@ public class Exo10 {
     public static void displayEvenIndex(ArrayList<Integer> liste) {
         System.out.print('{');
 
-        for(int i = 0; i < liste.size(); i++) {
+       /*for (int i : liste){
+            if(i%2 == 0) {
+                System.out.print(liste.get(i) + ",");
+            }
+        }*/
+       for(int i = 0; i < liste.size(); i++) {
             if(i%2 == 0) {
                 System.out.print(liste.get(i) + ",");
             }
         }
-
         System.out.print("}\n");
     }
 
@@ -26,7 +30,7 @@ public class Exo10 {
         liste.add(7);
         liste.add(8);
         liste.add(9);
-
+        System.out.print(liste);
         displayEvenIndex(liste);
     }
 }
